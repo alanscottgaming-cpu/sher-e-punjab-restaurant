@@ -1,63 +1,143 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Sher-E-Punjab Family Restaurant</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
 
 body{
 margin:0;
 font-family:Arial;
-background:#140a05;
+background:#0e0502;
 color:white;
 }
 
-header{
-background:url("https://images.unsplash.com/photo-1600891964599-f61ba0e24092") center/cover;
-padding:120px 20px;
-text-align:center;
-}
+.hero{
 
-header h1{
-font-size:45px;
-color:#ffcc66;
-}
+height:100vh;
 
-header p{
-font-size:20px;
-}
+background-image:
+linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.9)),
+url("https://images.unsplash.com/photo-1600891964092-4316c288032e");
 
-.section{
-padding:50px 20px;
-}
+background-size:cover;
+background-position:center;
 
-.menu-category{
-margin-bottom:40px;
-}
-
-.menu-category h2{
-color:#ffb347;
-border-bottom:2px solid #ffb347;
-padding-bottom:10px;
-}
-
-.menu-item{
 display:flex;
-justify-content:space-between;
-padding:8px 0;
-border-bottom:1px solid #333;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+
+text-align:center;
+
+}
+
+.hero h1{
+
+font-size:55px;
+color:#ffcc66;
+
+}
+
+.hero p{
+
+font-size:22px;
+
+}
+
+.buttons{
+
+margin-top:25px;
+
+}
+
+.btn{
+
+padding:15px 30px;
+
+border-radius:6px;
+
+margin:10px;
+
+text-decoration:none;
+
+font-size:18px;
+
+color:white;
+
+}
+
+.call{
+
+background:#b93b00;
+
 }
 
 .map{
-margin-top:40px;
+
+background:#2e7d32;
+
 }
 
-footer{
-background:black;
-padding:20px;
+.section{
+
+padding:60px 20px;
+
 text-align:center;
+
+}
+
+.cards{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:25px;
+
+margin-top:40px;
+
+}
+
+.card{
+
+background:#1b0c05;
+
+border:1px solid #ff9800;
+
+padding:20px;
+
+border-radius:10px;
+
+}
+
+.card img{
+
+width:100%;
+
+border-radius:10px;
+
+}
+
+.map-section{
+
+padding:60px 20px;
+
+text-align:center;
+
+}
+
+.footer{
+
+background:black;
+
+padding:30px;
+
+text-align:center;
+
 }
 
 </style>
@@ -66,126 +146,128 @@ text-align:center;
 
 <body>
 
-<header>
+<!-- HERO -->
 
-<h1>SHER-E-PUNJAB FAMILY RESTAURANT</h1>
+<div class="hero">
+
+<h1>SHER-E-PUNJAB<br>FAMILY RESTAURANT</h1>
+
 <p>Authentic Punjabi Taste • Professional Service</p>
 
-</header>
+<div class="buttons">
 
-<section class="section">
+<a class="btn call" href="tel:+919861777991">Call Now</a>
 
-<h1>Restaurant Menu</h1>
-
-<!-- Beverages -->
-
-<div class="menu-category">
-<h2>Beverages / Mocktails</h2>
-
-<div class="menu-item"><span>Blue Lagoon</span><span>₹99</span></div>
-<div class="menu-item"><span>Virgin Mojito</span><span>₹89</span></div>
-<div class="menu-item"><span>Mango Delight</span><span>₹129</span></div>
-<div class="menu-item"><span>Masala Cold Drink</span><span>₹59</span></div>
-<div class="menu-item"><span>Plain Cold Drink</span><span>₹29</span></div>
-<div class="menu-item"><span>Fresh Lime Water</span><span>₹39</span></div>
-<div class="menu-item"><span>Masala Soda</span><span>₹39</span></div>
-<div class="menu-item"><span>Water Bottle</span><span>₹20</span></div>
+<a class="btn map"
+href="https://maps.google.com">Get Directions</a>
 
 </div>
 
-<!-- Thali -->
+</div>
 
-<div class="menu-category">
-<h2>Thali</h2>
+<!-- FOOD CARDS -->
 
-<div class="menu-item"><span>Veg Thali</span><span>₹110</span></div>
-<div class="menu-item"><span>Chicken Thali</span><span>₹139</span></div>
-<div class="menu-item"><span>Fish Thali</span><span>₹109</span></div>
-<div class="menu-item"><span>Egg Thali</span><span>₹99</span></div>
+<div class="section">
+
+<h2>Punjabi Feast – Explore Our Menu</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398">
+
+<h3>Tandoori Starters</h3>
+
+<p>Chicken Tikka<br>Tandoori Paneer</p>
 
 </div>
 
-<!-- Papad / Salad -->
+<div class="card">
 
-<div class="menu-category">
-<h2>Papad & Salad</h2>
+<img src="https://images.unsplash.com/photo-1631515242808-497c3fbd3974">
 
-<div class="menu-item"><span>Masala Papad</span><span>₹49</span></div>
-<div class="menu-item"><span>Roasted Papad</span><span>₹19</span></div>
-<div class="menu-item"><span>Fried Papad</span><span>₹29</span></div>
-<div class="menu-item"><span>Green Salad</span><span>₹59</span></div>
-<div class="menu-item"><span>Dahi Salad</span><span>₹49</span></div>
-<div class="menu-item"><span>Onion Salad</span><span>₹30</span></div>
+<h3>Punjabi Non-Veg</h3>
+
+<p>Butter Chicken<br>Mutton Rogan Josh</p>
 
 </div>
 
-<!-- Noodles -->
+<div class="card">
 
-<div class="menu-category">
-<h2>Noodles</h2>
+<img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0">
 
-<div class="menu-item"><span>Veg Noodles</span><span>₹89</span></div>
-<div class="menu-item"><span>Veg Hakka Noodles</span><span>₹109</span></div>
-<div class="menu-item"><span>Mushroom Noodles</span><span>₹119</span></div>
-<div class="menu-item"><span>Veg Mix Noodles</span><span>₹109</span></div>
-<div class="menu-item"><span>Paneer Noodles</span><span>₹129</span></div>
-<div class="menu-item"><span>Veg Schezwan Noodles</span><span>₹129</span></div>
-<div class="menu-item"><span>Egg Noodles</span><span>₹129</span></div>
-<div class="menu-item"><span>Chicken Noodles</span><span>₹149</span></div>
-<div class="menu-item"><span>Chicken Schezwan Noodles</span><span>₹139</span></div>
-<div class="menu-item"><span>Chicken Hakka Noodles</span><span>₹159</span></div>
-<div class="menu-item"><span>Chicken Mix Noodles</span><span>₹179</span></div>
+<h3>Veg Classics</h3>
+
+<p>Dal Makhani<br>Paneer Butter Masala</p>
 
 </div>
 
-<!-- Biryani -->
+<div class="card">
 
-<div class="menu-category">
-<h2>Biryani</h2>
+<img src="https://images.unsplash.com/photo-1631452180519-c014fe946bc7">
 
-<div class="menu-item"><span>Veg Biryani</span><span>₹120</span></div>
-<div class="menu-item"><span>Mushroom Biryani</span><span>₹139</span></div>
-<div class="menu-item"><span>Paneer Biryani</span><span>₹149</span></div>
-<div class="menu-item"><span>Veg Mix Biryani</span><span>₹169</span></div>
-<div class="menu-item"><span>Kaju Biryani</span><span>₹189</span></div>
+<h3>Biryani & Rice</h3>
 
-<div class="menu-item"><span>Chicken Dum Biryani</span><span>₹169</span></div>
-<div class="menu-item"><span>Chicken Fry Biryani</span><span>₹179</span></div>
-<div class="menu-item"><span>Chicken Boneless Biryani</span><span>₹199</span></div>
-<div class="menu-item"><span>Chicken Lollipop Biryani</span><span>₹199</span></div>
-<div class="menu-item"><span>Chicken Joint Biryani</span><span>₹219</span></div>
-<div class="menu-item"><span>Chicken Kalmi Biryani</span><span>₹229</span></div>
-<div class="menu-item"><span>Chicken Tikka Biryani</span><span>₹239</span></div>
-<div class="menu-item"><span>Non-Veg Mix Biryani</span><span>₹299</span></div>
-
-<div class="menu-item"><span>Mutton Biryani (6pc)</span><span>₹219</span></div>
-<div class="menu-item"><span>Mutton Juicy Biryani</span><span>₹239</span></div>
-<div class="menu-item"><span>Mutton Boneless Biryani</span><span>₹259</span></div>
-
-<div class="menu-item"><span>Fish Biryani</span><span>₹189</span></div>
-<div class="menu-item"><span>Prawns Biryani</span><span>₹219</span></div>
+<p>Chicken Biryani<br>Paneer Biryani</p>
 
 </div>
 
-</section>
+</div>
 
-<section class="section">
+</div>
 
-<h2>Find Us</h2>
+<!-- MAP -->
+
+<div class="map-section">
+
+<h2>Visit Our Dhaba</h2>
 
 <iframe
-src="https://maps.google.com/maps?q=berhampur%20odisha&t=&z=13&ie=UTF8&iwloc=&output=embed"
+
+src="https://maps.google.com/maps?q=berhampur&t=&z=13&ie=UTF8&iwloc=&output=embed"
+
 width="100%"
+
 height="300">
+
 </iframe>
 
-</section>
+</div>
 
-<footer>
+<div class="footer">
 
-<p>© Sher-E-Punjab Family Restaurant</p>
+Home | Menu | Reviews | Contact
 
-</footer>
+</div>
 
-</body>
+</bod<!-- FULL MENU SECTION -->
+<section id="menu" style="padding:40px;background:#111;color:white;text-align:center">
+
+<h2 style="font-size:32px;margin-bottom:30px;">Our Full Menu</h2>
+
+<div style="max-width:900px;margin:auto">
+
+<h3>Tandoori Starters</h3>
+<p>Paneer Tikka • Chicken Tikka • Seekh Kebab • Tandoori Chicken</p>
+
+<h3>Punjabi Veg</h3>
+<p>Dal Makhani • Paneer Butter Masala • Shahi Paneer • Kadai Paneer</p>
+
+<h3>Punjabi Non-Veg</h3>
+<p>Butter Chicken • Chicken Curry • Mutton Curry</p>
+
+<h3>Biryani & Rice</h3>
+<p>Chicken Biryani • Paneer Biryani • Veg Biryani • Jeera Rice</p>
+
+<h3>Breads</h3>
+<p>Butter Naan • Garlic Naan • Tandoori Roti • Lachha Paratha</p>
+
+<h3>Drinks</h3>
+<p>Lassi • Mango Lassi • Cold Drinks • Mineral Water</p>
+
+</div>
+
+</section>y>
+
 </html>

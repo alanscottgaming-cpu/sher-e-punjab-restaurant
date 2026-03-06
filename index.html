@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-<title>Sher-E-Punjab Family Restaurant</title>
+<title>Sher-E-Punjab Restaurant</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -11,263 +10,152 @@
 body{
 margin:0;
 font-family:Arial;
-background:#0e0502;
+background:#140701;
 color:white;
 }
 
 .hero{
-
-height:100vh;
-
-background-image:
-linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.9)),
-url("https://images.unsplash.com/photo-1600891964092-4316c288032e");
-
-background-size:cover;
-background-position:center;
-
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-
+background:url("https://images.unsplash.com/photo-1600891964599-f61ba0e24092") center/cover;
+padding:120px 20px;
 text-align:center;
-
 }
 
-.hero h1{
-
-font-size:55px;
-color:#ffcc66;
-
+h1{
+font-size:45px;
 }
 
-.hero p{
-
-font-size:22px;
-
-}
-
-.buttons{
-
-margin-top:25px;
-
-}
-
-.btn{
-
-padding:15px 30px;
-
+.buttons a{
+padding:12px 25px;
+margin:5px;
 border-radius:6px;
-
-margin:10px;
-
 text-decoration:none;
-
-font-size:18px;
-
 color:white;
-
 }
 
 .call{
-
-background:#b93b00;
-
+background:#c0392b;
 }
 
-.map{
-
-background:#2e7d32;
-
+.direction{
+background:#27ae60;
 }
 
-.section{
-
+.menu-section{
 padding:60px 20px;
-
 text-align:center;
-
 }
 
-.cards{
-
+.grid{
 display:grid;
-
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-
-gap:25px;
-
-margin-top:40px;
-
+gap:20px;
+max-width:1000px;
+margin:auto;
 }
 
 .card{
-
-background:#1b0c05;
-
-border:1px solid #ff9800;
-
+background:#2b1408;
 padding:20px;
-
 border-radius:10px;
-
 }
 
 .card img{
-
 width:100%;
-
 border-radius:10px;
-
 }
 
-.map-section{
-
-padding:60px 20px;
-
+.map{
 text-align:center;
-
+padding:40px;
 }
 
 .footer{
-
-background:black;
-
-padding:30px;
-
 text-align:center;
+padding:20px;
+background:#0c0401;
+}
 
+.footer a{
+color:white;
+margin:10px;
+text-decoration:none;
 }
 
 </style>
-
 </head>
 
 <body>
-
-<!-- HERO -->
 
 <div class="hero">
 
 <h1>SHER-E-PUNJAB<br>FAMILY RESTAURANT</h1>
 
-<p>Authentic Punjabi Taste • Professional Service</p>
+<p>Authentic Punjabi Taste,<br>Professional Service</p>
 
 <div class="buttons">
-
-<a class="btn call" href="tel:+919861777991">Call Now</a>
-
-<a class="btn map"
-href="https://maps.google.com">Get Directions</a>
-
+<a class="call" href="#">Call Now</a>
+<a class="direction" href="#">Get Directions</a>
 </div>
 
 </div>
 
-<!-- FOOD CARDS -->
+<section class="menu-section">
 
-<div class="section">
+<h2>Punjabi Feast : Explore Our Menu</h2>
 
-<h2>Punjabi Feast – Explore Our Menu</h2>
-
-<div class="cards">
+<div class="grid">
 
 <div class="card">
-
-<img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398">
-
+<img src="https://images.unsplash.com/photo-1601050690597-df0568f70950">
 <h3>Tandoori Starters</h3>
-
-<p>Chicken Tikka<br>Tandoori Paneer</p>
-
+<p>Chicken Tikka</p>
+<p>Tandoori Paneer</p>
 </div>
 
 <div class="card">
-
-<img src="https://images.unsplash.com/photo-1631515242808-497c3fbd3974">
-
-<h3>Punjabi Non-Veg</h3>
-
-<p>Butter Chicken<br>Mutton Rogan Josh</p>
-
+<img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398">
+<h3>Punjabi Non-Veg Specials</h3>
+<p>Butter Chicken</p>
+<p>Mutton Rogan Josh</p>
 </div>
 
 <div class="card">
-
-<img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0">
-
-<h3>Veg Classics</h3>
-
-<p>Dal Makhani<br>Paneer Butter Masala</p>
-
-</div>
-
-<div class="card">
-
 <img src="https://images.unsplash.com/photo-1631452180519-c014fe946bc7">
+<h3>Veg Punjabi Classics</h3>
+<p>Dal Makhani</p>
+<p>Paneer Butter Masala</p>
+</div>
 
+<div class="card">
+<img src="https://images.unsplash.com/photo-1603133872878-684f208fb84b">
 <h3>Biryani & Rice</h3>
-
-<p>Chicken Biryani<br>Paneer Biryani</p>
-
+<p>Chicken Biryani</p>
+<p>Paneer Tikka Biryani</p>
 </div>
 
 </div>
 
-</div>
+</section>
 
-<!-- MAP -->
-
-<div class="map-section">
+<div class="map">
 
 <h2>Visit Our Dhaba</h2>
 
 <iframe
-
-src="https://maps.google.com/maps?q=berhampur&t=&z=13&ie=UTF8&iwloc=&output=embed"
-
-width="100%"
-
-height="300">
-
+src="https://maps.google.com/maps?q=punjab&t=&z=13&ie=UTF8&iwloc=&output=embed"
+width="90%" height="300">
 </iframe>
 
 </div>
 
 <div class="footer">
 
-Home | Menu | Reviews | Contact
+<a href="index.html">Home</a>
+<a href="menu.html">Menu</a>
+<a href="#">Reviews</a>
+<a href="#">Contact</a>
 
 </div>
 
-</bod<!-- FULL MENU SECTION -->
-<section id="menu" style="padding:40px;background:#111;color:white;text-align:center">
-
-<h2 style="font-size:32px;margin-bottom:30px;">Our Full Menu</h2>
-
-<div style="max-width:900px;margin:auto">
-
-<h3>Tandoori Starters</h3>
-<p>Paneer Tikka • Chicken Tikka • Seekh Kebab • Tandoori Chicken</p>
-
-<h3>Punjabi Veg</h3>
-<p>Dal Makhani • Paneer Butter Masala • Shahi Paneer • Kadai Paneer</p>
-
-<h3>Punjabi Non-Veg</h3>
-<p>Butter Chicken • Chicken Curry • Mutton Curry</p>
-
-<h3>Biryani & Rice</h3>
-<p>Chicken Biryani • Paneer Biryani • Veg Biryani • Jeera Rice</p>
-
-<h3>Breads</h3>
-<p>Butter Naan • Garlic Naan • Tandoori Roti • Lachha Paratha</p>
-
-<h3>Drinks</h3>
-<p>Lassi • Mango Lassi • Cold Drinks • Mineral Water</p>
-
-</div>
-
-</section>y>
-
+</body>
 </html>

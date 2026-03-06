@@ -2,33 +2,148 @@
 <html>
 <head>
 <title>Sher-E-Punjab Family Restaurant</title>
-</head>
 
-<body style="background:black;color:white;text-align:center;font-family:Arial">
+<style>
 
-<h1>🔥 Sher-E-Punjab Family Restaurant</h1>
-<p>Authentic Punjabi Taste</p>
+body{
+margin:0;
+font-family:Arial;
+background:black;
+color:white;
+}
 
-<h2>Our Special Menu</h2>
+.hero{
+height:100vh;
+background:url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092') center/cover no-repeat;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
 
-<p>🍗 Chicken Biryani – ₹220</p>
-<p>🍛 Butter Chicken – ₹260</p>
-<p>🧀 Paneer Butter Masala – ₹200</p>
+.hero h1{
+font-size:50px;
+color:#ffcc66;
+}
 
-<a href="https://wa.me/919861775991">Order on WhatsApp</a>
+.btn{
+padding:12px 25px;
+margin:10px;
+border-radius:6px;
+text-decoration:none;
+color:white;
+font-weight:bold;
+}
 
-</body>
-</html>
-<!DOCTYPE html>
-<html>
-<head>
-<title>Sher-E-Punjab Restaurant</title>
+.call{background:#c0392b;}
+.map{background:#27ae60;}
+
+.menu{
+padding:60px;
+background:#111;
+}
+
+.menu h2{
+text-align:center;
+margin-bottom:40px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.card{
+background:#222;
+padding:20px;
+border-radius:10px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:scale(1.05);
+}
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px 20px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.mapbox{
+padding:40px;
+}
+
+iframe{
+width:100%;
+height:300px;
+border:0;
+}
+
+</style>
 </head>
 
 <body>
 
-<h1>Welcome to Sher-E-Punjab Family Restaurant</h1>
-<p>Best food in town</p>
+<div class="hero">
+<h1>SHER-E-PUNJAB</h1>
+<p>Authentic Punjabi Taste</p>
+
+<a class="btn call" href="tel:9861775991">Call Now</a>
+
+<a class="btn map" href="https://maps.google.com">Get Directions</a>
+</div>
+
+<div class="menu">
+
+<h2>Punjabi Feast Menu</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Tandoori Starters</h3>
+<p>Chicken Tikka</p>
+<p>Tandoori Paneer</p>
+</div>
+
+<div class="card">
+<h3>Punjabi Non-Veg</h3>
+<p>Butter Chicken</p>
+<p>Mutton Rogan Josh</p>
+</div>
+
+<div class="card">
+<h3>Veg Punjabi</h3>
+<p>Dal Makhani</p>
+<p>Paneer Butter Masala</p>
+</div>
+
+<div class="card">
+<h3>Biryani</h3>
+<p>Chicken Biryani</p>
+<p>Paneer Tikka Biryani</p>
+</div>
+
+</div>
+</div>
+
+<div class="mapbox">
+
+<h2 style="text-align:center;">Visit Our Dhaba</h2>
+
+<iframe src="https://maps.google.com/maps?q=Sher-e-Punjab%20Restaurant&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+
+</div>
+
+<a class="whatsapp" href="https://wa.me/919861775991">Order on WhatsApp</a>
 
 </body>
 </html>
